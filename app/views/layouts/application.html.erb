@@ -7,8 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="navbar navbar-inverse">
+		<div class="container">
+			
+			<div class="navbar-brand">
+				<i class="fa fa-hand-lizard-o fa-1g"></i>
+				<%= link_to 'Dev Match', root_path %>
+			</div>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li><%= link_to 'About', pages_about_path  %></li>
+			</ul>
+		</div>
+	</div>
 
-<%= yield %>
+	<div class="container">
+		<%= yield %>	
+	</div>
+	
 
 </body>
 </html>
